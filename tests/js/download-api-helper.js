@@ -7,7 +7,8 @@ const username = process.argv[2];
 const realmName = process.argv[3];
 const realmModule = process.argv[4];
 
-var Realm = require(realmModule);
+const require_method = require;
+var Realm = require_method(realmModule);
 
 function createObjects(user) {
     const config = {
